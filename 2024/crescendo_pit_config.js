@@ -109,6 +109,12 @@ var config_data = `
     }
   ],
   "auton": [
+  { "name": "Comments new page",
+      "code": "co2",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    }
   ],
   "teleop": [
   ],

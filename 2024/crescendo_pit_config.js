@@ -69,6 +69,10 @@ var config_data = `
       "code": "fpu",
       "type": "bool"
     },
+    { "name": "# of Auto cycles",
+      "code": "autCycles",
+      "type": "number"
+    },
     { "name": "Auto score",
       "code": "aut",
       "type": "radio",

@@ -73,8 +73,21 @@ var config_data = `
       "code": "autCycles",
       "type": "number"
     },
-    { "name": "Auto score",
+    { "name": "Auto scoring",
       "code": "aut",
+      "type": "radio",
+      "choices": {
+        "a": "Amp<br>",
+        "s": "Speaker<br>",
+        "b": "Both"
+      }
+    },
+    { "name": "# of Teleop cycles",
+      "code": "teleopCycles",
+      "type": "number"
+    },
+    { "name": "Telop scoring",
+      "code": "teleopScore",
       "type": "radio",
       "choices": {
         "a": "Amp<br>",

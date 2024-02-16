@@ -76,6 +76,7 @@ var config_data = `
         "1": "Amp<br>",
         "2": "Speaker<br>",
         "3": "Both","
+      }
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
       "code": "sct",

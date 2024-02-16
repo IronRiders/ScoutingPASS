@@ -69,11 +69,13 @@ var config_data = `
       "code": "fpu",
       "type": "bool"
     },
-    { "name": "Autos",
+    { "name": "Auto score",
       "code": "aut",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
+      "type": "radio",
+      "choices": {
+        "1": "Amp<br>",
+        "2": "Speaker<br>",
+        "3": "Both","
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
       "code": "sct",

@@ -73,9 +73,9 @@ var config_data = `
       "code": "aut",
       "type": "radio",
       "choices": {
-        "1": "Amp<br>",
-        "2": "Speaker<br>",
-        "3": "Both","
+        "a": "Amp<br>",
+        "s": "Speaker<br>",
+        "b": "Both"
       }
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",

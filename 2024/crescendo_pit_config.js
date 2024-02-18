@@ -99,9 +99,9 @@ var config_data = `
       "choices": {
         "a": "Amp<br>",
         "s": "Speaker<br>",
-        "b": "Both",
+        "b": "Both"
+      },
       "required": "true"
-      }
     },
     { "name": "Expected # of Teleop<br> cycles per match",
       "code": "teleopCycles",

@@ -7,17 +7,25 @@ var config_data = `
   "prematch": [
     { "name": "Team Number",
       "code": "t",
-      "type": "number"
+      "type": "number",
+      "required": "true"
     },
-    { "name": "Width",
-      "code": "wid",
+    { "name": "Longest Side<br>Including Bumpers",
+      "code": "lng",
+      "type": "number",
+      "defaultValue": "0",
+      "required": "true"
+    },
+    { "name": "Shortest Side<br>Including Bumpers",
+      "code": "srt",
       "type": "number",
       "defaultValue": "0"
     },
     { "name": "Weight",
       "code": "wei",
       "type": "number",
-      "defaultValue": "0"
+      "defaultValue": "0",
+      "required": "true"
     },
     { "name": "Drivetrain",
       "code": "drv",
@@ -29,7 +37,8 @@ var config_data = `
         "m": "Mechanum<br>",
         "o": "Other"
       },
-      "defaultValue": "o"
+      "defaultValue": "o",
+      "required": "true"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -56,22 +65,26 @@ var config_data = `
       "choices": {
         "n": "Neo<br>",
         "f": "Falcon<br>",
+        "k": "Kraken<br>",
         "c": "CIM<br>",
         "x": "Other<br>"
       },
-      "defaultValue":"x"
+      "defaultValue":"n",
+      "required": "true"
     },
     { "name": "# of Batteries",
       "code": "nob",
       "type": "number"
     },
-    { "name": "Floor pickup Notes",
+    { "name": "Ground pickup for notes",
       "code": "fpu",
-      "type": "bool"
+      "type": "bool",
+      "required": "true"
     },
-    { "name": "# of Auto cycles",
+    { "name": "Expected # of Auto<br> cycles per match",
       "code": "autCycles",
-      "type": "number"
+      "type": "number",
+      "required": "true"
     },
     { "name": "Auto scoring",
       "code": "aut",
@@ -79,12 +92,14 @@ var config_data = `
       "choices": {
         "a": "Amp<br>",
         "s": "Speaker<br>",
-        "b": "Both"
+        "b": "Both",
+      "required": "true"
       }
     },
-    { "name": "# of Teleop cycles",
+    { "name": "Expected # of Teleop<br> cycles per match",
       "code": "teleopCycles",
-      "type": "number"
+      "type": "number",
+      "required": "true"
     },
     { "name": "Telop scoring",
       "code": "teleopScore",
@@ -93,13 +108,15 @@ var config_data = `
         "a": "Amp<br>",
         "s": "Speaker<br>",
         "b": "Both"
-      }
+      },
+      "required": "true"
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
       "code": "sct",
       "type": "text",
       "size": 20,
-      "maxSize": 250
+      "maxSize": 250,
+      "required": "true"
     },
     { "name": "Comments",
       "code": "co",

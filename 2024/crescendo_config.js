@@ -1,7 +1,7 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
+  "title": "Iron Riders Scouting",
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "Glacier Peak",
       "required": "true"
     },
     { "name": "Match Level",
@@ -60,7 +60,7 @@ var config_data = `
       "type": "clickable_image",
       "filename": "2024/field_image.png",
       "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
+      "allowableResponses": "1 2 12 14 13 24 36 38 50 26 25 36 37 48 49 60 61 72 11 23 35 47 59 71",
       "shape": "circle 5 black red true"
     }
   ],

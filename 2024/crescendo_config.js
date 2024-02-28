@@ -1,7 +1,7 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Iron Riders Scouting",
+  "title": "Match Scouting - FRC 4180",
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [

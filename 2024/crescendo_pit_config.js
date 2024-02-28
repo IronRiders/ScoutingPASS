@@ -1,7 +1,7 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
+  "title": "Pit Scouting - FRC 4180",
   "page_title": "Crescendo",
   "pitConfig": "true",
   "prematch": [
@@ -17,21 +17,86 @@ var config_data = `
       "type": "number",
       "required": "true"
     },
-    { "name": "Longest Side<br>Including Bumpers",
-      "code": "lng",
-      "type": "number",
-      "defaultValue": "0",
+    { "name": "Move during Auto?",
+      "code": "aut_mvmt",
+      "type": "bool",
       "required": "true"
     },
-    { "name": "Shortest Side<br>Including Bumpers",
-      "code": "srt",
-      "type": "number",
-      "defaultValue": "0"
+    { "name": "Score during Auto?",
+      "code": "aut_score",
+      "type": "bool",
+      "required": "true"
     },
-    { "name": "Weight",
-      "code": "wei",
+    { "name": "# of Auto Cycles",
+      "code": "aut_cycles",
       "type": "number",
-      "defaultValue": "0",
+      "required": "true"
+    },
+    { "name": "How are notes aquired?",
+      "code": "pickup",
+      "type": "radio",
+      "choices": {
+        "f": "Floor<br>",
+        "s": "Source<br>",
+        "b": "Both"
+      },
+      "required": "true"
+    },
+    { "name": "Where are notes placed?",
+      "code": "score",
+      "type": "radio",
+      "choices": {
+        "f": "Amp<br>",
+        "s": "Speaker<br>",
+        "b": "Both"
+      },
+      "required": "true"
+    },
+    { "name": "Expected # of Auto<br> cycles per match",
+      "code": "autCycles",
+      "type": "number",
+      "required": "true"
+    },
+    { "name": "Get onstage?",
+      "code": "onstage",
+      "type": "bool",
+      "required": "true"
+    },
+    { "name": "Can you harmonize?",
+      "code": "harmony",
+      "type": "bool",
+      "required": "true"
+    },
+    { "name": "Who is your drive coach?",
+      "code": "coach",
+      "type": "radio",
+      "choices": {
+        "s": "Student<br>",
+        "m": "Mentor<br>"
+      },
+      "required": "true"
+    },
+    { "name": "How much drivepractice<br/>have you had? (hours)",
+      "code": "practice",
+      "type": "number",
+      "required": "true"
+    },
+    { "name": "How does your manipulator work?",
+      "code": "manipulator",
+      "type": "text",
+      "size": 20,
+      "maxSize": 500,
+      "required": "true"
+    },
+    { "name": "Seperate mechanism to intake?",
+      "code": "seperate_intake",
+      "type": "bool",
+      "required": "true"
+    },
+    { 
+      "name": "Does the manipulator extend?",
+      "code": "extension",
+      "type": "bool",
       "required": "true"
     },
     { "name": "Drivetrain",
@@ -40,92 +105,19 @@ var config_data = `
       "choices": {
         "s": "Swerve<br>",
         "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
+        "b": "Butterfly/Grasshopper<br>",
         "m": "Mechanum<br>",
         "o": "Other"
       },
-      "defaultValue": "o",
       "required": "true"
     },
-    { "name": "Other Drivetrain",
-      "code": "odt",
+    { "name": "What is something unique<br/>about your robot?",
+      "code": "desc",
       "type": "text",
       "size": 20,
-      "maxSize": 50
+      "maxSize": 250
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1 (8.14:1)<br>",
-        "2": "L2 (6.75:1)<br>",
-        "3": "L3 (6.12:1)<br>",
-        "4": "L4 (5.14:1)<br>",
-        "o": "Other ratio (put in comments)<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
-    { "name": "Drivetrain Motor",
-      "code": "mot",
-      "type": "radio",
-      "choices": {
-        "n": "Neo<br>",
-        "f": "Falcon<br>",
-        "k": "Kraken<br>",
-        "c": "CIM<br>",
-        "x": "Other<br>"
-      },
-      "defaultValue":"n",
-      "required": "true"
-    },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
-    },
-    { "name": "Ground pickup for notes",
-      "code": "fpu",
-      "type": "bool",
-      "required": "true"
-    },
-    { "name": "Expected # of Auto<br> cycles per match",
-      "code": "autCycles",
-      "type": "number",
-      "required": "true"
-    },
-    { "name": "Auto scoring",
-      "code": "aut",
-      "type": "radio",
-      "choices": {
-        "a": "Amp<br>",
-        "s": "Speaker<br>",
-        "b": "Both"
-      },
-      "required": "true"
-    },
-    { "name": "Expected # of Teleop<br> cycles per match",
-      "code": "teleopCycles",
-      "type": "number",
-      "required": "true"
-    },
-    { "name": "Telop scoring",
-      "code": "teleopScore",
-      "type": "radio",
-      "choices": {
-        "a": "Amp<br>",
-        "s": "Speaker<br>",
-        "b": "Both"
-      },
-      "required": "true"
-    },
-    { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250,
-      "required": "true"
-    },
-    { "name": "Comments",
+    { "name": "SCOUTER ONLY:<br/>other notes about this robot:",
       "code": "co",
       "type": "text",
       "size": 20,
@@ -133,12 +125,6 @@ var config_data = `
     }
   ],
   "auton": [
-  { "name": "Comments new page",
-      "code": "co2",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    }
   ],
   "teleop": [
   ],

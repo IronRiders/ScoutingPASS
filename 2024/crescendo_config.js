@@ -104,10 +104,6 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
@@ -115,12 +111,15 @@ var config_data = `
         "p": "Parked<br>",
         "o": "Onstage<br>",
         "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
     },
+    { "name": "Harmony",
+      "code": "hmy",
+      "type": "bool"
+    }
     { "name": "Note in Trap",
       "code": "nit",
       "type": "bool"

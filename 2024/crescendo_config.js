@@ -70,7 +70,7 @@ var config_data = `
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
+    { "name": "Amplified Scores",
       "code": "tta",
       "type": "counter"
     },

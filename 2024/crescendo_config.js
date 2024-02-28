@@ -101,6 +101,14 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
+    },
+    { "name": "Coopertition Bonus",
+      "code": "coop",
+      "type": "bool"
+    },
+    { "name": "Melody Bonus",
+      "code": "melody",
+      "type": "bool"
     }
   ],
   "endgame": [
@@ -122,6 +130,10 @@ var config_data = `
     },
     { "name": "Note in Trap",
       "code": "nit",
+      "type": "bool"
+    },
+    { "name": "Ensemble Bonus",
+      "code": "ensemble",
       "type": "bool"
     }
   ],

@@ -12,23 +12,6 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
-      "code": "e",
-      "type": "event",
-      "defaultValue": "Glacier Peak",
-      "required": "true"
-    },
-    { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
-      },
-      "defaultValue": "qm",
-      "required": "true"
-    },
     { "name": "Match #",
       "code": "m",
       "type": "match",

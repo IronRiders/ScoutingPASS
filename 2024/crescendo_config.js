@@ -119,7 +119,7 @@ var config_data = `
     { "name": "Harmony",
       "code": "hmy",
       "type": "bool"
-    }
+    },
     { "name": "Note in Trap",
       "code": "nit",
       "type": "bool"

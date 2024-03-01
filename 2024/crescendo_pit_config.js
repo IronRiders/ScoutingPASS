@@ -27,7 +27,7 @@ var config_data = `
       "type": "bool",
       "required": "true"
     },
-    { "name": "# of Auto Cycles",
+    { "name": "# of Auto Sources",
       "code": "aut_cycles",
       "type": "number",
       "required": "true"
@@ -52,7 +52,7 @@ var config_data = `
       },
       "required": "true"
     },
-    { "name": "Expected # of Auto<br> cycles per match",
+    { "name": "Expected # of Teleop<br> cycles per match",
       "code": "autCycles",
       "type": "number",
       "required": "true"

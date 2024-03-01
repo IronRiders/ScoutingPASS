@@ -99,6 +99,12 @@ var config_data = `
       "type": "bool",
       "required": "true"
     },
+    { 
+      "name": "Can you score in the trap?",
+      "code": "extension",
+      "type": "bool",
+      "required": "true"
+    },
     { "name": "Drivetrain",
       "code": "drv",
       "type": "radio",

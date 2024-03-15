@@ -105,6 +105,8 @@ var config_data = `
         "o": "Over Bumper<br>",
         "u": "Under Bumper<br>",
         "c": "Can't"
+      },
+    "required": "true"
     },
     { 
       "name": "Does the manipulator extend?",

@@ -99,7 +99,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Ground Pick Up",
-      "code": "score",
+      "code": "bumper_intake",
       "type": "radio",
       "choices": {
         "o": "Over Bumper<br>",

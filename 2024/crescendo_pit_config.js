@@ -27,8 +27,13 @@ var config_data = `
       "type": "bool",
       "required": "true"
     },
-    { "name": "# of Auto Sources",
+    { "name": "# of Auto Paths",
       "code": "aut_cycles",
+      "type": "number",
+      "required": "true"
+    },
+    { "name": "Max Auto Score ",
+      "code": "aut_maxscore",
       "type": "number",
       "required": "true"
     },
@@ -46,14 +51,14 @@ var config_data = `
       "code": "score",
       "type": "radio",
       "choices": {
-        "f": "Amp<br>",
+        "a": "Amp<br>",
         "s": "Speaker<br>",
         "b": "Both"
       },
       "required": "true"
     },
     { "name": "Expected # of Teleop<br> cycles per match",
-      "code": "autCycles",
+      "code": "telCycles",
       "type": "number",
       "required": "true"
     },
@@ -93,6 +98,14 @@ var config_data = `
       "type": "bool",
       "required": "true"
     },
+    { "name": "Ground Pick Up",
+      "code": "score",
+      "type": "radio",
+      "choices": {
+        "o": "Over Bumper<br>",
+        "u": "Under Bumper<br>",
+        "c": "Can't"
+    },
     { 
       "name": "Does the manipulator extend?",
       "code": "extension",
@@ -118,6 +131,12 @@ var config_data = `
       "required": "true"
     },
     { "name": "What is something unique<br/>about your robot?",
+      "code": "desc",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
+    { "name": "What was your biggest issue from last comp and did you fix it?",
       "code": "desc",
       "type": "text",
       "size": 20,

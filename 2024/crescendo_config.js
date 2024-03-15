@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "GP",
+      "defaultValue": "SM",
       "required": "true"
     },
     { "name": "Match Level",
@@ -172,6 +172,10 @@ var config_data = `
         "5": "5 (fast)"
       },
       "defaultValue":"3"
+    },
+    { "name": "Broke",
+      "code": "brk",
+      "type": "bool"
     },
     { "name": "Died/Immobilized",
       "code": "die",

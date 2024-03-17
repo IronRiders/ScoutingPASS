@@ -76,6 +76,10 @@ var config_data = `
     { "name": "Speaker Scores",
       "code": "ass",
       "type": "counter"
+    },
+    { "name": "Pick Up Note from Middle",
+      "code": "anc",
+      "type": "bool"
     }
   ],
   "teleop": [

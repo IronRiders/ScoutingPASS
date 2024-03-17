@@ -77,7 +77,7 @@ var config_data = `
       "code": "ass",
       "type": "counter"
     },
-    { "name": "Pick Up Note from Middle",
+    { "name": "Pick Up Note<br>from Middle",
       "code": "anc",
       "type": "bool"
     }

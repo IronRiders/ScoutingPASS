@@ -138,7 +138,7 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-    { "name": "What was your biggest issue from last comp and did you fix it?",
+    { "name": "What was your<br/>biggest issue from last comp<br/>and did you fix it?",
       "code": "desc",
       "type": "text",
       "size": 20,

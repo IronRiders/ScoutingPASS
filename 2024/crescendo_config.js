@@ -81,6 +81,19 @@ var config_data = `
     { "name": "Pick Up Note<br>from Middle",
       "code": "anc",
       "type": "bool"
+    },
+    { "name": "First Center<br>Note Location",
+      "code": "fcl",
+      "type": "radio",
+      "choices": {
+        "a": "A(Speaker)<br>",
+        "b": "B<br>",
+        "c": "C<br>",
+        "d": "D<br>",
+        "e": "E(Source)<br>"
+        "n": "None<br>"
+      },
+      "defaultValue": "n"
     }
   ],
   "teleop": [

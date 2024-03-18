@@ -90,7 +90,7 @@ var config_data = `
         "b": "B<br>",
         "c": "C<br>",
         "d": "D<br>",
-        "e": "E(Source)<br>"
+        "e": "E(Source)<br>",
         "n": "None<br>"
       },
       "defaultValue": "n"

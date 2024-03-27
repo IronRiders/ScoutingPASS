@@ -191,6 +191,10 @@ var config_data = `
       },
       "defaultValue":"3"
     },
+    { "name": "Note Stuck",
+      "code": "nst",
+      "type": "bool"
+    },
     { "name": "Broke",
       "code": "brk",
       "type": "bool"

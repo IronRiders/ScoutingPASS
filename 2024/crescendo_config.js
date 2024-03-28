@@ -78,22 +78,33 @@ var config_data = `
       "code": "ass",
       "type": "counter"
     },
-    { "name": "Pick Up Note<br>from Middle",
-      "code": "anc",
+    { "name": "Auto went <br> Under Stage",
+      "code": "ade",
+      "type": "bool"
+    }
+    { "name": "Auto went <br> Around Stage",
+      "code": "ade",
+      "type": "bool"
+    }
+    { "name": "A Center<br>(AMP side)",
+      "code": "aca",
       "type": "bool"
     },
-    { "name": "First Center<br>Note Location",
-      "code": "fcl",
-      "type": "radio",
-      "choices": {
-        "a": "A(Speaker)<br>",
-        "b": "B<br>",
-        "c": "C<br>",
-        "d": "D<br>",
-        "e": "E(Source)<br>",
-        "n": "None<br>"
-      },
-      "defaultValue": "n"
+    { "name": "B Center Note",
+      "code": "acb",
+      "type": "bool"
+    },
+    { "name": "C Center Note",
+      "code": "acc",
+      "type": "bool"
+    },
+    { "name": "D Center Note",
+      "code": "acd",
+      "type": "bool"
+    },
+    { "name": "E Center Note<br>(Source side)",
+      "code": "ade",
+      "type": "bool"
     }
   ],
   "teleop": [

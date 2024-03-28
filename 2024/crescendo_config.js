@@ -81,11 +81,11 @@ var config_data = `
     { "name": "Auto went <br> Under Stage",
       "code": "ade",
       "type": "bool"
-    }
+    },
     { "name": "Auto went <br> Around Stage",
       "code": "ade",
       "type": "bool"
-    }
+    },
     { "name": "A Center<br>(AMP side)",
       "code": "aca",
       "type": "bool"

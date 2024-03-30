@@ -167,6 +167,18 @@ var config_data = `
     }
   ],
   "postmatch": [
+      { "name": "Match Strategy",
+      "code": "ms",
+      "type": "radio",
+      "choices": {
+        "a": "Amp Focused<br>",
+        "s": "Speaker Focused<br>",
+        "m": "Mixed<br>",
+        "d": "Defense<br>",
+        "n": "Not Observed"
+      },
+      "defaultValue": "n"
+    },
     { "name": "Driver Skill",
       "code": "ds",
       "type": "radio",

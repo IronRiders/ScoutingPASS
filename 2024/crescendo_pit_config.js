@@ -27,7 +27,7 @@ var config_data = `
       "type": "bool",
       "required": "true"
     },
-    { "name": "# of Auto Paths",
+    { "name": "# of consistent<br>Auto Paths",
       "code": "aut_cycles",
       "type": "number",
       "required": "true"
@@ -47,7 +47,7 @@ var config_data = `
       },
       "required": "true"
     },
-    { "name": "Where are notes placed?",
+    { "name": "Where are notes scored?",
       "code": "score",
       "type": "radio",
       "choices": {
@@ -57,7 +57,7 @@ var config_data = `
       },
       "required": "true"
     },
-    { "name": "Expected # of Teleop<br> cycles per match",
+    { "name": "Expected # of Teleop<br/>cycles per match",
       "code": "telCycles",
       "type": "number",
       "required": "true"
@@ -72,30 +72,9 @@ var config_data = `
       "type": "bool",
       "required": "true"
     },
-    { "name": "Who is your drive coach?",
-      "code": "coach",
-      "type": "radio",
-      "choices": {
-        "s": "Student<br>",
-        "m": "Mentor<br>"
-      },
-      "required": "true"
-    },
     { "name": "How much drivepractice<br/>have you had? (hours)",
       "code": "practice",
       "type": "number",
-      "required": "true"
-    },
-    { "name": "How does your manipulator work?",
-      "code": "manipulator",
-      "type": "text",
-      "size": 20,
-      "maxSize": 500,
-      "required": "true"
-    },
-    { "name": "Seperate mechanism to intake?",
-      "code": "seperate_intake",
-      "type": "bool",
       "required": "true"
     },
     { "name": "Ground Pick Up",
@@ -107,12 +86,6 @@ var config_data = `
         "c": "Can't"
       },
     "required": "true"
-    },
-    { 
-      "name": "Does the manipulator extend?",
-      "code": "extension",
-      "type": "bool",
-      "required": "true"
     },
     { 
       "name": "Can you score in the trap?",

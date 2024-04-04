@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "SM",
+      "defaultValue": "dcmp",
       "required": "true"
     },
     { "name": "Match Level",

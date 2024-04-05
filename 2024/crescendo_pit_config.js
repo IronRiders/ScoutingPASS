@@ -17,22 +17,24 @@ var config_data = `
       "type": "number",
       "required": "true"
     },
-    { "name": "Move during Auto?",
+    { "name": "How often do you succefully leave?",
       "code": "aut_mvmt",
-      "type": "bool",
-      "required": "true"
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
     },
     { "name": "Score during Auto?",
       "code": "aut_score",
       "type": "bool",
       "required": "true"
     },
-    { "name": "# of consistent<br>Auto Paths",
-      "code": "aut_cycles",
-      "type": "number",
-      "required": "true"
+    { "name": "What can you do in Autonomus?",
+      "code": "desc",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
     },
-    { "name": "Max Auto Score ",
+    { "name": "Max Auto Notes Scored ",
       "code": "aut_maxscore",
       "type": "number",
       "required": "true"
@@ -94,16 +96,10 @@ var config_data = `
       "required": "true"
     },
     { "name": "Drivetrain",
-      "code": "drv",
-      "type": "radio",
-      "choices": {
-        "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grasshopper<br>",
-        "m": "Mechanum<br>",
-        "o": "Other"
-      },
-      "required": "true"
+      "code": "dri",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
     },
     { "name": "What is something unique<br/>about your robot?",
       "code": "desc",

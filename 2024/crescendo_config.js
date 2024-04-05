@@ -79,11 +79,11 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Auto went <br> Under Stage",
-      "code": "ade",
+      "code": "awu",
       "type": "bool"
     },
     { "name": "Auto went <br> Around Stage",
-      "code": "ade",
+      "code": "awa",
       "type": "bool"
     },
     { "name": "A Center<br>(AMP side)",

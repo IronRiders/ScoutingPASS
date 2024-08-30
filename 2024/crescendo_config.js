@@ -171,7 +171,6 @@ var config_data = `
         "b": "Below Average<br>",
         "a": "Average<br>",
         "g": "Good<br>",
-        "e": "Excellent<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"

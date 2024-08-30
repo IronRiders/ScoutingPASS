@@ -182,7 +182,7 @@ var config_data = `
       "choices": {
         "1": "1 (slow)<br>",
         "2": "2<br>",
-        "3": "3<br>(fast)",
+        "3": "3<br>(fast)"
       },
       "defaultValue":"2"
     },

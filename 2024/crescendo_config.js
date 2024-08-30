@@ -78,25 +78,15 @@ var config_data = `
       "code": "ass",
       "type": "counter"
     },
-    { "name": "A Center<br>(AMP side)",
-      "code": "aca",
-      "type": "bool"
-    },
-    { "name": "B Center Note",
-      "code": "acb",
-      "type": "bool"
-    },
-    { "name": "C Center Note",
-      "code": "acc",
-      "type": "bool"
-    },
-    { "name": "D Center Note",
-      "code": "acd",
-      "type": "bool"
-    },
-    { "name": "E Center Note<br>(Source side)",
-      "code": "ade",
-      "type": "bool"
+    { "name": "Auto Note Position",
+      "code": "anp",
+      "type": "clickable_image",
+      "filename": "2024/field_image.png",
+      "dimensions": "5 5",
+      "toggleClick": "true",
+      "clickRestriction": "onePerBox",
+      "allowableResponses": "1 3 5 6 8 10 11 13 15 18 23",
+      "shape": "circle 12 black red true"
     }
   ],
   "teleop": [

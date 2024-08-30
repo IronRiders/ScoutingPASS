@@ -183,7 +183,7 @@ var config_data = `
         "2": "2<br>",
         "3": "3(fast)"
       },
-      "defaultValue":"2"
+      "defaultValue": "2"
     },
     { "name": "Note Stuck",
       "code": "nst",

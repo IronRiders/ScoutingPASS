@@ -82,11 +82,11 @@ var config_data = `
       "code": "anp",
       "type": "clickable_image",
       "filename": "2024/field_image.png",
-      "dimensions": "5 5",
+      "dimensions": "9 5",
       "toggleClick": "true",
       "clickRestriction": "onePerBox",
-      "allowableResponses": "1 3 5 6 8 10 11 13 15 18 23",
-      "shape": "circle 12 black red true"
+      "allowableResponses": "2 5 8 11 14 17 20 23 26 32 41",
+      "shape": "circle 8 black DarkOrange true"
     }
   ],
   "teleop": [
@@ -153,18 +153,6 @@ var config_data = `
     }
   ],
   "postmatch": [
-      { "name": "Match Strategy",
-      "code": "ms",
-      "type": "radio",
-      "choices": {
-        "a": "Amp Focused<br>",
-        "s": "Speaker Focused<br>",
-        "m": "Mixed<br>",
-        "d": "Defense<br>",
-        "n": "Not Observed"
-      },
-      "defaultValue": "n"
-    },
     { "name": "Driver Skill",
       "code": "ds",
       "type": "radio",
@@ -194,11 +182,9 @@ var config_data = `
       "choices": {
         "1": "1 (slow)<br>",
         "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
+        "3": "3<br>(fast)",
       },
-      "defaultValue":"3"
+      "defaultValue":"2"
     },
     { "name": "Note Stuck",
       "code": "nst",

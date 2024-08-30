@@ -17,29 +17,28 @@ var config_data = `
       "type": "number",
       "required": "true"
     },
-    { "name": "How often do you succefully leave?",
+    { "name": "Can you conistently leave starting zone in auto?",
       "code": "aut_mvmt",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
-    { "name": "Score during Auto?",
+    { "name": "Can you conistently score during Auto?",
       "code": "aut_score",
       "type": "bool",
       "required": "true"
     },
-    { "name": "What can you do in Autonomus?",
-      "code": "desc",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
+    { "name": "Can you score a centerline note in Auto?",
+      "code": "aut_centerscore",
+      "type": "bool",
+      "required": "true"
     },
-    { "name": "Max Auto Notes Scored ",
-      "code": "aut_maxscore",
+    { "name": "Average Auto Notes Scored ",
+      "code": "aut_avgscore",
       "type": "number",
       "required": "true"
     },
-    { "name": "How are notes aquired?",
+    { "name": "How do you intake notes?",
       "code": "pickup",
       "type": "radio",
       "choices": {
@@ -49,7 +48,7 @@ var config_data = `
       },
       "required": "true"
     },
-    { "name": "Where are notes scored?",
+    { "name": "Where can you score notes?",
       "code": "score",
       "type": "radio",
       "choices": {
@@ -59,38 +58,22 @@ var config_data = `
       },
       "required": "true"
     },
-    { "name": "Expected # of Teleop<br/>cycles per match",
+    { "name": "Expected(Average) # of Teleop<br/>cycles per match",
       "code": "telCycles",
       "type": "number",
       "required": "true"
     },
-    { "name": "Get onstage?",
+    { "name": "Can you climb onstage consistently?",
       "code": "onstage",
       "type": "bool",
       "required": "true"
     },
-    { "name": "Can you harmonize?",
+    { "name": "Can you consistently harmonize?",
       "code": "harmony",
       "type": "bool",
       "required": "true"
     },
-    { "name": "How much drivepractice<br/>have you had? (hours)",
-      "code": "practice",
-      "type": "number",
-      "required": "true"
-    },
-    { "name": "Ground Pick Up",
-      "code": "bumper_intake",
-      "type": "radio",
-      "choices": {
-        "o": "Over Bumper<br>",
-        "u": "Under Bumper<br>",
-        "c": "Can't"
-      },
-    "required": "true"
-    },
-    { 
-      "name": "Can you score in the trap?",
+    { "name": "Can you score in the trap?",
       "code": "extension",
       "type": "bool",
       "required": "true"
@@ -101,7 +84,7 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-    { "name": "What is something unique<br/>about your robot?",
+    { "name": "What is your robot specialized in or better then other robots at?",
       "code": "desc",
       "type": "text",
       "size": 20,

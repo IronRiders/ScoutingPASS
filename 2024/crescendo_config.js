@@ -133,6 +133,10 @@ var config_data = `
     }
   ],
   "endgame": [
+    { "name": "Climbing Timer",
+      "code": "ct",
+      "type": "timer"
+    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",

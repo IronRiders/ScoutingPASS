@@ -90,6 +90,10 @@ var config_data = `
     }
   ],
   "teleop": [
+    { "name": "Cycle Timer",
+      "code": "mct",
+      "type": "cycle"
+    },
     { "name": "Amp Scores",
       "code": "tas",
       "type": "counter"

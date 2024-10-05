@@ -17,18 +17,17 @@ var config_data = `
       "type": "number",
       "required": "true"
     },
-    { "name": "Can you conistently leave starting zone in auto?",
+    { "name": "Leave starting zone in auto?",
       "code": "aut_mvmt",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
+      "type": "bool",
+      "required": "true"
     },
-    { "name": "Can you conistently score during Auto?",
+    { "name": "Score during Auto?",
       "code": "aut_score",
       "type": "bool",
       "required": "true"
     },
-    { "name": "Can you score a centerline note in Auto?",
+    { "name": "Score a centerline note in Auto?",
       "code": "aut_centerscore",
       "type": "bool",
       "required": "true"
@@ -63,7 +62,7 @@ var config_data = `
       "type": "number",
       "required": "true"
     },
-    { "name": "Can you climb onstage consistently?",
+    { "name": "Can you climb onstage?",
       "code": "onstage",
       "type": "bool",
       "required": "true"
@@ -84,19 +83,13 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-    { "name": "What is your robot specialized in or better then other robots at?",
+    { "name": "What is your robot specialized in<br/>or better then other robots at?",
       "code": "desc",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
-    { "name": "What was your<br/>biggest issue from last comp<br/>and did you fix it?",
-      "code": "desc",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    },
-    { "name": "SCOUTER ONLY:<br/>other notes about this robot:",
+    { "name": "SCOUTER ONLY:<br/>other notes about this robot:<br/> Don't forget to take a photo",
       "code": "co",
       "type": "text",
       "size": 20,

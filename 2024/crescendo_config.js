@@ -90,10 +90,6 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
-      "code": "mct",
-      "type": "cycle"
-    },
     { "name": "Amp Scores",
       "code": "tas",
       "type": "counter"
@@ -105,6 +101,23 @@ var config_data = `
     { "name": "Amplified Scores",
       "code": "tta",
       "type": "counter"
+    },
+    { "name": "Passed Note Count",
+      "code": "tfc",
+      "type": "counter"
+    },
+    { "name": "Was Passed<br>Game Pieces",
+      "code": "wf",
+      "type": "bool"
+    },
+    { "name": "Was Defended",
+      "code": "wd",
+      "type": "bool"
+    },
+    { "name": "Who Defended this bot",
+      "code": "who",
+      "type": "text",
+      "maxSize": 20
     },
     { "name": "Coopertition Bonus",
       "code": "coop",
@@ -146,15 +159,19 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Note Stuck",
+    { "name": "Had a Note Stuck",
       "code": "nst",
       "type": "bool"
     },
-    { "name": "Broke",
+    { "name": "Stuggled to Intake<br>or didn't",
       "code": "brk",
       "type": "bool"
     },
-    { "name": "Died/Immobilized",
+    { "name": "Stuggled to Score<br>or didn't",
+      "code": "brk",
+      "type": "bool"
+    },
+    { "name": "Died/Immobilized<br>(Stoped moving for a while)",
       "code": "die",
       "type": "bool"
     },
@@ -166,7 +183,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 75
     }
   ]
 }`;

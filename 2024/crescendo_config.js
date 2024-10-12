@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "wabe",
+      "defaultValue": "wagg",
       "required": "true"
     },
     { "name": "Match Level",
@@ -168,6 +168,10 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Stuggled to Score<br>or didn't",
+      "code": "brk",
+      "type": "bool"
+    },
+    { "name": "Broke<br> Something isn't working",
       "code": "brk",
       "type": "bool"
     },

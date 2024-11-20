@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "wagg",
+      "defaultValue": "2024wagg",
       "required": "true"
     },
     { "name": "Match Level",

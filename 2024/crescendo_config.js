@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "wagg",
+      "defaultValue": "2024wagg",
       "required": "true"
     },
     { "name": "Match Level",
@@ -63,6 +63,10 @@ var config_data = `
       "clickRestriction": "one",
       "allowableResponses": "1 2 12 14 13 24 36 38 50 26 25 36 37 48 49 60 61 72 11 23 35 47 59 71",
       "shape": "circle 5 black red true"
+    },
+    { "name": "Api",
+      "code": "api",
+      "type": "TbaApi"
     }
   ],
   "auton": [
